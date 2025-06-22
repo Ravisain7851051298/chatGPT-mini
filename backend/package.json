@@ -1,0 +1,19 @@
+{
+  "name": "chatgptmini",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A ChatGPT-like chatbot using OpenAI's GPT-4 API and a modern React",
+  "main": "src/app.js",
+  "scripts": {
+     "dev": "nodemon src/app.js"
+  },
+  "author": "ravisain",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "openai": "^5.6.0"
+  }
+}
