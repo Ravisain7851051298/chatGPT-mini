@@ -43,13 +43,15 @@ This mini project allows you to send prompts to the ChatGPT model and receive re
     git clone https://github.com/Ravisain7851051298/chatgpt-mini.git
     ```
 2. Install dependencies:
-    ```bash
+   1. ```bash
     cd chatgpt-mini
     ```
+   2. then 
     ```bash
-    - cd frontend  
+    cd frontend  
     npm install
     ```
+   2. open new terminal
     ```bash
     cd backend  
     npm install
