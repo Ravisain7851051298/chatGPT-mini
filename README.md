@@ -23,7 +23,7 @@ This mini project allows you to send prompts to the ChatGPT model and receive re
 ---
 
 ## 🚀 Demo
-👉 **View Live Demo**: [https://yourprojecturl.com](https://yourprojecturl.com)
+👉 **View Live Demo**: [https://chat-gpt-mini-iota.vercel.app](https://chat-gpt-mini-iota.vercel.app)
 
 *(Replace this link with your actual deployed site.)*
 
