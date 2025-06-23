@@ -41,7 +41,10 @@ export default function Chat() {
       <div className={`flex justify-between items-center px-6 pr-10 p-4 ${theme === 'light' ? 'bg-white' : 'bg-gray-800'} border-b`}>
         <div className="flex items-center space-x-3">
           <SiOpenai className={`text-3xl ${theme === 'light' ? 'text-gray-800' : 'text-gray-100'}`} />
-          <h1 className={`text-2xl font-bold ${theme === 'light' ? 'text-gray-800' : 'text-gray-100'}`}>ChatGPT</h1>
+          <h1 className={`flex justify-between items-center text-2xl font-bold ${theme === 'light' ? 'text-gray-800' : 'text-gray-100'}`}>ChatGPT
+            <h1 className={`text-lg mt-1 font-thin ${theme === 'light' ? 'text-gray-800' : 'text-gray-100'}`}>-mini</h1>
+          </h1>
+          
         </div>
         <button
           onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
@@ -60,18 +63,18 @@ export default function Chat() {
             className={`flex items-start space-x-3 ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
           >
             {msg.role === 'assistant' && (
-              <div className={`w-9 h-9 rounded-full flex items-center justify-center ${theme === 'light' ? 'bg-green-500 text-white' : 'bg-green-600 text-gray-100'}`}><FaRobot /></div>
+              <div className={`w-9 h-9 rounded-full flex items-center justify-center ${theme === 'light' ? 'bg-gray-300 text-black' : 'bg-gray-500 text-gray-100'}`}><FaRobot /></div>
             )}
             <div
               className={`max-w-[75%] p-3 rounded-2xl shadow ${msg.role === 'user'
-                ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-br-none'
-                : theme === 'light' ? 'bg-gray-100 text-gray-800 rounded-bl-none' : 'bg-gray-600 text-gray-100 rounded-bl-none'
+                ? `${theme==='light' ? 'bg-gradient-to-tr from-gray-500 to-gray-200 text-white rounded-tr-none' : 'bg-gradient-to-bl from-gray-800 to-gray-200 text-black rounded-tr-none'}`
+                : theme === 'light' ? 'bg-gray-200 text-gray-800 rounded-tl-none' : 'bg-gray-600 text-gray-100 rounded-tl-none'
                 }`}
             >
               {msg.content}
             </div>
             {msg.role === 'user' && (
-              <div className={`w-9 h-9 rounded-full flex items-center justify-center ${theme === 'light' ? 'bg-blue-500 text-white' : 'bg-blue-600 text-gray-100'}`}><FaUser /></div>
+              <div className={`w-9 h-9 rounded-full flex items-center justify-center ${theme === 'light' ? 'bg-gray-300 text-gray-900' : 'bg-gray-500 text-gray-100'}`}><FaUser /></div>
             )}
           </div>
         ))}
