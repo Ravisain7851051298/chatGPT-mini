@@ -45,13 +45,25 @@ This mini project allows you to send prompts to the ChatGPT model and receive re
 2. Install dependencies:
     ```bash
     cd chatgpt-mini
+    ```
+    ```bash
+    - cd frontend  
+    npm install
+    ```
+    ```bash
+    cd backend  
     npm install
     ```
 3. Create a `.env` file and add your OpenAI API key:
     ```
+    PORT=5000
     OPENAI_API_KEY=your_api_key_here
     ```
-4. Start the development servers:
+4. Update frontend/sec/services/api.js with your local server
+    ```
+    const API_URL = 'http://localhost:5000/api/chat';
+    ```
+5. Start the development servers:
     - Backend:
       ```bash
       npm run dev
@@ -60,9 +72,9 @@ This mini project allows you to send prompts to the ChatGPT model and receive re
       ```bash
       npm run dev
       ```
-5. Open your browser and navigate to:
+6. Open your browser and navigate to:
     ```
-    http://localhost:3000
+    http://localhost:5173/
     ```
 
 ---
@@ -70,3 +82,4 @@ This mini project allows you to send prompts to the ChatGPT model and receive re
 ## 🐳 Build for Production
 ```bash
 npm install
+```
